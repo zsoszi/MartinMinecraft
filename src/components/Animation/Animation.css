@@ -1,0 +1,45 @@
+.animContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://i.redd.it/jv8qdoou2wzy.png);
+    animation: moveout 2s ease-in-out 6s both;
+    z-index: 5;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.name {
+    position: absolute;
+    animation-name: name;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    top: 20%;
+    left: 40%;
+}
+
+@keyframes name {
+    0% {
+        opacity: 0;
+        transform: scale(0) translateY(50%);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1) translateY(100%);
+    }
+    80% {
+        transform: scale(2) translateY(150%);
+    }
+    100% {
+        transform: translateY(150%);
+        top: 5%
+    }
+}
+
+@keyframes moveout {
+    to {
+        right: 100%;
+        transform: translateX(-200%);
+    }
+}

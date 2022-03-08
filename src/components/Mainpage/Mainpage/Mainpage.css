@@ -1,0 +1,106 @@
+.main {
+	width: 100%;
+	height: 100vh;
+	background-image: url("../../../picture/bg.png");
+	background-size: cover;
+	overflow: hidden;
+}
+
+/* Footer*/
+
+.footerContainer {
+	position: fixed;
+	background-color: rgba(255, 255, 255, 0.068);
+	width: 100%;
+	height: 9vh;
+	text-align: center;
+	left: 0;
+	bottom: 0;
+}
+
+.footer {
+	padding: 10px;
+}
+
+.mn {
+	margin: 5px;
+	text-decoration: none;
+	color: #694a0f;
+	
+}
+.micon,
+.insta{
+	width: 16px;
+}
+
+.fb {
+	margin: 5px;
+	text-decoration: none;
+	color: rgb(41, 41, 189);
+}
+
+.pr {
+	margin: 5px;
+	text-decoration: none;
+	color: #e61b27;
+}
+
+.ins {
+	margin: 5px;
+	text-decoration: none;
+  color: #c45d2d;
+}
+
+.tw {
+	margin: 5px;
+	text-decoration: none;
+	color: #9147ff;
+}
+.yo {
+	margin: 5px;
+	text-decoration: none;
+	color: #ff0000;
+}
+
+.mn:hover,
+.fb:hover,
+.pr:hover,
+.ins:hover,
+.tw:hover,
+.yo:hover {
+	cursor: pointer;
+}
+
+.bg-music {
+	position: absolute;
+	left: 0;
+	margin: 5px;
+}
+
+#audio {
+	background-color: transparent;
+	color: #fff;
+	font-size: 3em;
+	border: none;
+	display: block;
+	margin: 0 auto;
+	opacity: 0.3;
+	transition: all linear 0.2s;
+}
+
+#audio:hover {
+	opacity: 1;
+}
+
+
+@media screen and (max-width: 800px) {
+	.footerContainer{
+		height:18vh
+	}
+	.bg-music{
+		position:absolute;
+		width: auto;
+		bottom:0;
+		text-align: center;
+	}
+}

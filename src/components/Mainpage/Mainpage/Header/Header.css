@@ -1,0 +1,17 @@
+.headContainer {
+    width: 100%;
+    height: 5vh;
+}
+
+.headName {
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    height: 4vh;
+    opacity: 0.5;
+}
+
+.headName:hover{
+opacity: 1;
+    
+}

@@ -1,0 +1,99 @@
+.NavbarItems {
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2em;
+}
+
+.nav-menu {
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-gap: 10px;
+	list-style: none;
+	text-align: center;
+	width: 70vw;
+	justify-content: end;
+	margin-right: 2rem;
+}
+
+.nav-links {
+font-family: 'Minecraft', regular;
+	font-size: 25px;
+	color: #acacac;
+	font-weight: 1000;
+	letter-spacing: 1px;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+	color: #dbd6d6;
+}
+
+.fa-bars {
+	color: #acacac;
+}
+
+.menu-icon {
+	display: none;
+}
+
+@media screen and (max-width: 1040px) {
+
+	
+	.NavbarItems {
+		position: relative;
+	}
+
+	.nav-menu {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 500px;
+		position: absolute;
+		top: 80px;
+		left: -100%;
+		opacity: 1;
+		transition: all 0.5s ease;
+	}
+
+	.nav-menu.active {
+		background: transparent;
+		left: 0;
+		opacity: 1;
+		transition: all 0.5s ease;
+		z-index: 1;
+	}
+
+	.nav-links {
+		text-align: center;
+		padding: 1rem;
+		width: 100%;
+		display: table;
+		font-size: 20px;
+	}
+
+	.nav-links:hover {
+		color: #dbd6d6;
+	}
+
+	.menu-icon {
+		color: #dbd6d6;
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translate(-100%, 60%);
+		font-size: 1.8rem;
+		cursor: pointer;
+		z-index: 1;
+	}
+  
+  .fa-times{
+    color: #dbd6d6;
+    font-size: 2rem;
+  }
+
+  
+}

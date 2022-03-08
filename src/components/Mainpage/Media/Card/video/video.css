@@ -1,0 +1,19 @@
+
+.videoCont{
+  position: relative;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100vh;
+  top: 100px;
+}
+
+.videoBox{
+  position: absolute;
+  display: flex;
+  margin: auto;
+  width: 10vw;
+  height:10vh;
+  background-color: wheat;
+}
+ 
